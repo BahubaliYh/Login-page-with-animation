@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel|Great+Vibes|Muli|Sacramento" rel="stylesheet">
+    <style>
+        .fadeInUp{
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="animated fadeInUp">Earthjustice Organization</p>
+        <div class="animated fadeInDown">
+            <div class="buttons">
+                <button id="login">Login</button><button id="reg">Register</button>
+            </div>
+            <div class="login">
+                <form action="">
+                    <input type="text" placeholder="Username"><br>
+                    <input type="text" placeholder="Password"><br>
+                    <input type="submit" class="btn" name="" value="Login" id="">
+                </form>
+            </div>
+            <div class="reg">
+                <form action="">
+                    <input type="text" placeholder="Username"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="text" placeholder="Password"><br>
+                    <input type="submit" class="btn" name="" value="Register" id="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.reg').hide();
+        });
+
+        $('#login').click(function() {
+            $('.login').slideDown("slow");
+            $('.reg').hide();
+        });
+        $('#reg').click(function() {
+            $('.reg').slideDown("slow");
+            $('.login').hide();
+        });
+    </script>
+</body>
+
+</html>
